@@ -1,4 +1,4 @@
-import getProducts from "@/actions/GetProducts";
+import getProducts from "@/actions/get-products";
 import getProduct from "@/actions/get-product"
 import ProductList from "@/components/ProductList";
 import Gallery from "@/components/gallery";
