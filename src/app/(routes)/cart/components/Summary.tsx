@@ -29,14 +29,14 @@ const Summary = () => {
   const totalPrice = items.reduce((sum, item) => +sum + +item.price, 0);
 
   const onCheckout = async () => {
-    const res = await axios.post(
-      `${process.env.Next_Public_Api_Url}/checkout`,
+    const response = await axios.post(
+      `${process.env.NEXT_PUBLIC_API_URL}/checkout`,
       {
         productIds: items.map((item) => item.id),
       }
     );
 
-    window.location = res.data.url;
+    window.location = response.data.url;
   };
   return (
     <div className="mt-16 rounded-lg bg-gray-50 px-4 py-6 sm:p-6 lg:col-span-6 lg:mt-0 lg:p-8 ">

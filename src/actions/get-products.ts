@@ -1,6 +1,6 @@
 import { Product } from "../../types";
 import qs from "query-string";
-const URL = `${process.env.Next_Public_Api_Url}/products`;
+const URL = `${process.env.NEXT_PUBLIC_API_URL}/products`;
 interface Query {
   categoryId?: string;
   colorId?: string;
